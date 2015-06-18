@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Android WebView 加载本地html,实现JS与原生互调</title>
+    <script type="text/javascript">
+        
+    </script>
+</head>
+<body>
+    
+	<script src="jquery.js"></script>
+	<script src="my.js"></script>
+	
+	<div class="text test">
+	<p> <h3> Android WebView 加载本地html,实现JS与原生互调 </h3> </p> 
+		  <p>span内容：<span id="mySpan">我是span标签的原始内容！</span></p>
+		  <a href=javascript:app.showToast("调用原生") >
+				调用原生
+		  </a>
+		  <p><input type="button" value="js方式点击改变span内容" onclick="changeMySpanHtml()" /></p>
+		  
+		  <p><input type="button" value="jquery方式点击改变span内容" onclick="alert($('#mySpan').attr('id'))" /></p>
+
+	  </div>
+</body>
+</html>
